@@ -40,6 +40,7 @@ public class CityList {
      * @return Return whether list has a particular city
      */
     public boolean hasCity(City city) {
-        return false;
+        List list = cities;
+        return list.contains(city);
     }
 }
