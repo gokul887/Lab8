@@ -47,14 +47,4 @@ public class CityListTest {
         City city2 = new City("Edmonton", "AB");
         assertFalse(cityList.hasCity(city2));
     }
-
-    @Test
-    void testDelete() {
-        CityList cityList = mockCityList();
-        City city = new City("Charlottetown", "Prince Edward Island");
-        cityList.add(city);
-        assertEquals(true, cityList.hasCity(city));
-        cityList.delete(city);
-        assertEquals(false, cityList.hasCity(city));
-    }
 }
