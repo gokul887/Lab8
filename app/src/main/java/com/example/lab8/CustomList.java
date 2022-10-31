@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomList extends ArrayAdapter<City> {
 
@@ -56,5 +57,16 @@ public class CustomList extends ArrayAdapter<City> {
      */
     public void addCity(City city){
         cities.add(city);
+    }
+
+    /**
+     * This returns if list has a city
+     * @param city
+     * This is a candidate city to test for existence
+     * @return
+     * Return whether list has a particular city
+     */
+    public boolean hasCity(City city) {
+        return false;
     }
 }
