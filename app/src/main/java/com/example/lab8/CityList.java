@@ -55,4 +55,13 @@ public class CityList {
             list.remove(city);
         }
     }
+
+    /**
+     * This returns number of cities in the list
+     * @return
+     * Return number of cities in list
+     */
+    public int countCities() {
+
+    }
 }

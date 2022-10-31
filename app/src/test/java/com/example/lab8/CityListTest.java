@@ -57,4 +57,13 @@ public class CityListTest {
         cityList.delete(city);
         assertEquals(false, cityList.hasCity(city));
     }
+
+    @Test
+    void testCountCities() {
+        CityList cityList = mockCityList();
+        assertEquals(1, cityList.countCities());
+        City city = new City("Charlottetown", "Prince Edward Island");
+        cityList.add(city);
+        assertEquals(2, cityList.countCities());
+    }
 }
