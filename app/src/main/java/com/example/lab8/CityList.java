@@ -50,6 +50,9 @@ public class CityList {
      * This is a candidate city to delete
      */
     public void delete(City city) {
-
+        List list = cities;
+        if (list.contains(city)) {
+            list.remove(city);
+        }
     }
 }
