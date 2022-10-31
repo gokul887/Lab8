@@ -43,4 +43,13 @@ public class CityList {
         List list = cities;
         return list.contains(city);
     }
+
+    /**
+     * This deletes a city in the list
+     * @param city
+     * This is a candidate city to delete
+     */
+    public void delete(City city) {
+
+    }
 }
