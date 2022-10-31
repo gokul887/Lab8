@@ -62,6 +62,7 @@ public class CityList {
      * Return number of cities in list
      */
     public int countCities() {
-        return 0;
+        List list = cities;
+        return list.size();
     }
 }
